@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Of India</title>
+
+  <link rel="icon" type="image/png" href="./images/flavicon.png">
+  <link rel="stylesheet" href="./CSS/Style.css">
+  <link rel="stylesheet" href="./JavaScript/index.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+
+  <header id="main-header"></header>
+
+  <!-- End of Latest Products -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="text-dark" href="#" style="text-decoration: none;">Home</a></li>
+      <li class="breadcrumb-item font-weight-bold active" aria-current="page" style="color: #FD6E00;">All Products</li>
+    </ol>
+  </nav>
+
+  <div id="main">
+    <aside class="left-main-container">
+      <h5>FILTERS</h5>
+      <div class="categories mt-4">
+        <h6>CATEGORIES</h6>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Kurtas (2821)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Sherwani (1921)</label>
+      </div>
+      <div class="brand mt-4">
+        <h6>BRAND</h6>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Anouk (8921)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Sangria (9071)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">W (1599)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Biba (1440)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">West (2345)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Aries (23443)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Kushal (23421)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Lorem (5674)</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Ipsum (9087)</label>
+      </div>
+      <div class="price mt-4">
+        <h6>PRICE</h6>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Rs.500 to Rs.5000</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Rs.5000 to Rs.15000</label><br>
+        <input type="checkbox" name="Anouk" id="clothing"><label for="clothing">Rs.15000 to Rs.30000</label><br>
+      </div>
+      <div class="discount mt-4">
+        <h6>DISCOUNT RANGE</h6>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Anouk (8921)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Sangria (9071)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">W (1599)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Biba (1440)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">West (2345)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Aries (23443)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Kushal (23421)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Lorem (5674)</label><br>
+        <input type="radio" name="Anouk" id="clothing"><label for="clothing">Ipsum (9087)</label><br>
+      </div>
+    </aside>
+    <main class="right-main-container">
+      <div
+        class="top-box d-flex flex-lg-row flex-md-row flex-sm-column justify-content-lg-between justify-content-md-between align-items-sm-center justify-content-sm-center">
+        <h5>ALL PRODUCTS</h5>
+        <select name="popular" id="pop-items">
+          <optgroup>
+            <option value="Popularity">Sort by : Popularity</option>
+            <option value="Price">Sort by : Price</option>
+            <option value="Discount">Sort by : Discount</option>
+          </optgroup>
+        </select>
+      </div>
+      <br>
+
+
+      <div class="row" id="productsListArea">
+
+      </div>
+
+      <br>
+
+    </main>
+  </div>
+
+  <footer id="main-footer"></footer>
+
+
+  <!-- <script src="./JavaScript/index.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <script src="./header-footer.js"></script>
+  <script src="./JavaScript/product.service.js"></script>
+
+</body>
+
+</html>

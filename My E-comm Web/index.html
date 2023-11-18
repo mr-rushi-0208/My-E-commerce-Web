@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Of India</title>
+
+    <link rel="icon" type="image/png" href="./images/flavicon.png" >
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./JavaScript/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+<!-- Bootstrap Font Icon CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+    
+<header id="main-header"></header>
+
+<!-- Modal Start-->
+
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+   
+
+      <img src="./images/logo.png" alt="logo"> 
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body signin-modal">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#signIn" role="tab" aria-controls="home"
+            aria-selected="true">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="profile"
+            aria-selected="false">Create Account</a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="home-tab">
+          
+          
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email Address
+              <span class="required">*</span>
+            </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" role="email" placeholder="Enter email" required >
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password
+                <span class="required">*</span>
+
+              </label>
+              <input type="password" class="form-control" id="exampleInputPassword1" role="password" placeholder="Password">
+            </div>
+            <br>
+          <div>
+                  <a href="#"><button class="btn-signin">Sign In</button></a>  <br>
+                <br>
+                
+                <button type="button" class="btn-signup">FORGET YOUR PASSWORD?</button>
+          </div>
+
+          
+
+
+        </div>
+
+
+        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="profile-tab">
+
+
+          <form>
+
+            <div class="form-group">
+              <label for="exampleInputText2">Name
+              <span class="required">*</span>
+            </label>
+              <input type="text" class="form-control" id="exampleInputtext2" role="email" placeholder="Enter Your Name" required >
+            </div>
+            <br>
+
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail2">Email address
+              <span class="required">*</span>
+            </label>
+              <input type="email" class="form-control" id="exampleInputEmail2" role="email" placeholder="Enter email" required >
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label for="exampleInputPassword2">Password
+                <span class="required">*</span>
+
+              </label>
+              <input type="password" class="form-control" id="exampleInputPassword2" role="password" placeholder="Password">
+            </div>
+            <br>
+          <div>
+                  <a href="#"><button class="btn-signin">CREATE ACCOUNT</button></a>  <br>
+                
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="orLogWith">
+        <p>Or Login With</p>
+      </div>
+      <div class="social-media-button">
+        <a class="btn text-white" style="background-color: #1248bc;" href="#" role="button">
+          <i class="bi bi-facebook">&ThickSpace; FACEBOOK</i>
+        </a>
+
+        <div class="social-media-button">
+          <a class="btn text-white" style="background-color: #36b9f1;" href="#" role="button">
+            <i class="bi bi-twitter">&ThickSpace; TWITTER</i>
+          </a>
+
+          <div class="social-media-button">
+            <a class="btn text-white" style="background-color: #e31d1d;" href="#" role="button">
+              <i class="bi bi-google"> &ThickSpace; GOOGLE</i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div></div></div>
+
+<!-- Modal End-->
+
+
+<!-- Carousel Section -->
+                
+<div id="demo" class="carousel slide" data-ride="carousel">
+  
+                   
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col">
+      <img src="./images/mainimg.jpg" alt="Los Angeles" height="700px" width="600px">
+    </div>
+    <div class="col">
+      <span>60% Discount</span>
+      <h1>Ethinic <br>Collection</h1>
+       <p>Best Cloth Of 2023</p>
+       <a href="#"><button class="btn">Sign In</button></a>
+    </div>
+  </div>
+</div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col">
+      <img src="./images/mainimg.jpg" alt="Los Angeles" height="700px" width="600px">
+    </div>
+    <div class="col">
+      <span>60% Discount</span>
+       <h1>Ethinic Collection</h1>
+        <p>Best Cloth Of 2023</p>
+        <a href="#"><button class="btn">Sign In</button></a>
+    </div>
+  </div>
+</div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col">
+      <img src="./images/mainimg.jpg" alt="Los Angeles" height="700px" width="600px">
+    </div>
+    <div class="col">
+      <span>60% Discount</span>
+      <h1>Ethinic Collection</h1>
+       <p>Best Cloth Of 2023</p>
+       <a href="#"><button class="btn">Sign In</button></a>
+    </div>
+  </div>
+</div>
+  </div>
+  
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+
+
+
+
+           <!-- Shop By Category -->
+            <Section>
+                <div class="container-fluid">
+                    <div class="row" style="padding: 30px;">
+                        <div class="shopByCategory">
+                        <h2>Shop By Categories</h2>
+                    </div>
+                        <div class="col-4">
+                            <img src="./images/cat1.jpg" alt="cat1" height="300px" width="450px">
+                            <div class="text-block">
+                                <h2>Womens</h2></form>
+                                <a href="./Product List.html">
+                                  <button class="btn">Shop Now</button>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/cat2.jpg" alt="cat2" height="300px" width="450px">
+                                <div class="text-block">
+                                    <h2>Ethinic</h2>
+                                    <a href="./Product List.html"><button class="btn">Shop Now</button></a> 
+                                </div>
+                                </div>
+                            <div class="col-4">
+                                <img src="./images/cat3.jpg" alt="cat3" height="300px" width="450px">
+                                <div class="text-block">
+                                    <h2>Mens</h2>
+                                    <a href="./Product List.html"><button class="btn">Shop Now</button></a></div>
+                                </div>
+                                </div>
+                            </div>
+                          </Section>
+        
+            <!-- latest-products -->
+            <section>
+                <div class="latest-products">
+                    <div class="latestProduct">
+                        <h2>Latest Product</h2>
+
+                    </div>
+                    <div class="navigation">
+                      <ul>
+                        <li><a href="#" class="active">All</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Offer</a></li>
+                      </ul>
+                    </div>
+                    <div class="card-section">
+                        <div class="row">
+                        <div class="col-4">
+                      <div class="card">
+                        <img src="./images/product2.png"  alt="Product 1">
+                        <div class="span-new">
+                        <span>New</span>
+                    </div>
+                        <h4><a href="#">Green Dress With Details</a></h4>
+                        <ul>
+                            <li>$40.00</li>
+                            <li>$60.00</li>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        </ul>
+
+                        <div class="card-icons">
+                          <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                          <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                          <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="col-4">
+                        <div class="card">
+                          <img src="./images/product3.png"  alt="Product 1">
+                          <div class="span-new">
+                          <span>New</span>
+                      </div>
+                          <h4><a href="#">Green Dress With Details</a></h4>
+                          <ul>
+                              <li>$40.00</li>
+                              <li>$60.00</li>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          </ul>
+  
+                          <div class="card-icons">
+                            <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="./images/product4.png"  alt="Product 1">
+                          <div class="span-new">
+                          <span>New</span>
+                      </div>
+                          <h4><a href="#">Green Dress With Details</a></h4>
+                          <ul>
+                              <li>$40.00</li>
+                              <li>$60.00</li>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          </ul>
+  
+                          <div class="card-icons">
+                            <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="./images/product5.png"  alt="Product 1">
+                          <div class="span-new">
+                          <span>New</span>
+                      </div>
+                          <h4><a href="#">Green Dress With Details</a></h4>
+                          <ul>
+                              <li>$40.00</li>
+                              <li>$60.00</li>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          </ul>
+  
+                          <div class="card-icons">
+                            <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="./images/product6.png"  alt="Product 1">
+                          <div class="span-new">
+                          <span>New</span>
+                      </div>
+                          <h4><a href="#">Green Dress With Details</a></h4>
+                          <ul>
+                              <li>$40.00</li>
+                              <li>$60.00</li>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          </ul>
+  
+                          <div class="card-icons">
+                            <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="./images/product1.png"  alt="Product 1">
+                          <div class="span-new">
+                          <span>New</span>
+                      </div>
+                          <h4><a href="#">Green Dress With Details</a></h4>
+                          <ul>
+                              <li>$40.00</li>
+                              <li>$60.00</li>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          </ul>
+  
+                          <div class="card-icons">
+                            <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="./Product View Page.html" class="view"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    </div>
+                  </div>
+                 
+
+            <!-- Footer-->
+
+            <!-- <footer> -->
+<!--               
+        <div>
+           <button class="btn" id="back-to-top-button" > <a href="#topNav" id="back-to-top-button"> <i class="fa fa-arrow-up"></i></a> </button> -->
+        <!-- </div> -->
+                <hr>
+                
+
+<footer id="main-footer"></footer>
+
+
+                <script src="./JavaScript/index.js"></script>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+                  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+                  </script>
+                
+                
+                <script src="C:\Users\mr_rushi\Desktop\SOI Practice\jquery-3.5.1.slim.min.js"></script>
+                
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+                  </script>
+                
+                
+                
+                
+                <script src="C:\Users\mr_rushi\Desktop\SOI Practice\jquery-3.5.1.slim.min.js"></script>
+                <script src="C:\Users\mr_rushi\Desktop\SOI Practice\bootstrap.bundle.min.js"></script>
+                
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+                  </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+                  </script>
+<script src="./header-footer.js"></script>
+
+</body>
+
+</html>

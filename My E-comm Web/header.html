@@ -1,0 +1,196 @@
+
+<!-- Top Nav -->
+<header>
+  <nav class="navbar justify-content-center navbar-expand-lg navbar-light bg-dark" id="topNav">
+   <!-- <a class="navbar-brand" href="#"></a> -->
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav justify-content-center">
+       <li class="nav-item" id="socialIcon">
+           <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+           
+          
+         </li>
+          <li class="nav-item" id="socialIcon">
+           <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
+         </li>
+         <li class="nav-item" id="socialIcon">
+            <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+         </li>
+         <li class="nav-item">
+           <div class="search-wrapper">
+               <div class="input-group">
+                 
+
+                   <input type="search" id="search" placeholder="Search Product & Brands" aria-label="Search" aria-describedby="search-addon" />
+                   <button type="button" class="fa fa-search"></button>
+               </div>
+               </div>
+           </li>
+           <li class="nav-item">
+               <div  class="information-tab" role="info container">
+                   <img src="./images/call.png" id='call-icon' alt="call-icon" role='icon' aria-label='Phone icon'> 
+                   <a id='ph-number' href="" role='link'>+91 9838203708</a>
+                    </div>
+             </li>
+
+       <li class="nav-item">
+         <a class="nav-link" id="link" href="./Seller page.html">Sell On Company</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" id="link" href="#">Download App</a>
+       </li>
+
+       
+
+         <li class="nav-item">
+
+          <div class="coutry-wrapper">
+            <img src="./images/langicon.png" id="flag-icon" alt="lang-icon" role='icon' aria-label='language icon' height="35px" width="35px">
+          <select name="lang-select" id="lang-select" aria-labelledby="select box">
+              <option value="India" role="option" aria-labelledby="Option1">India</option>
+              <option value="UK" role="option" aria-labelledby="Option1">UK</option>
+              <option value="Canada" role="option" aria-labelledby="Option2">Canada</option>
+              <option value="Germany" role="option" aria-labelledby="Option3">USA</option>
+            </form>
+          </select>
+    
+      </div>
+         </li>
+     </ul>
+   </div>
+ </nav> 
+
+
+ <!-- Main Nav -->
+ <nav class="navBar justify-content-center navbar-expand-lg" id="stickysection">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav justify-content-center bg-white">
+
+
+       <li class="nav-Item">
+         <a href="./index.html"><img src="./images/logo.png" alt="Company Logo" height="90px" width="100px"></a> 
+         </li>
+          <li class="nav-Items">
+           <a class="nav-link" href="./index.html">Home</a>
+         </li>
+         <li class="nav-Items">
+           <a class="nav-link" href="#">Categories</i></a>
+         </li>
+         <li class="nav-Items">
+            <a class="nav-link" href="#">Latest</i></a>
+         </li>
+
+         <li class="nav-Items">
+           <a class="nav-link" href="#">Blog</i></a>
+         </li>
+         
+         <li class="nav-Items">
+            <a class="nav-link" href="./Profile page.html">Pages</i></a>
+         </li>
+         <li class="nav-Items">
+           <a class="nav-link" href="#">Contact</i></a>
+        </li>
+
+         <li class="nav-Items">
+           <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
+         </li>
+          <li class="nav-Items">
+           <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+         </li>
+         <li class="nav-Items">
+           <a href="#"><button class="btn"id="signin" type="button" data-toggle="modal"
+             data-target="#exampleModal">Sign In</button></a>
+         </li>
+     </ul>
+   </div>
+ </nav> 
+</header>
+
+
+
+
+<script>
+    // Changing image and number onclick
+document.getElementById('lang-select').addEventListener('change', changeFunc);
+
+function changeFunc() {
+  var selectBox = document.getElementById('lang-select');
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  if (selectedValue == 'India') {
+    document.getElementById('flag-icon').src = './images/langicon.png';
+    document.getElementById('ph-number').innerHTML = '+91 9838203708';
+  } else if (selectedValue == 'UK') {
+    document.getElementById('flag-icon').src ='./images/uk.png';
+    document.getElementById('ph-number').innerHTML = '+44 1632 960846';
+  } else if (selectedValue == 'Canada') {
+    document.getElementById('flag-icon').src = './images/canda.png';
+    document.getElementById('ph-number').innerHTML = '+1 202 555 0156';
+  } else {
+    document.getElementById('flag-icon').src = './images/usa.png';
+    document.getElementById('ph-number').innerHTML = '+49-163-5556-667';
+  };
+}
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+
+// sticky Navbar //////
+
+
+
+getYPosition = () => {
+  var top = window.pageYOffset || document.documentElement.scrollTop
+  return top;
+};
+
+document.addEventListener('scroll',()=>{
+  var scroll=getYPosition() 
+  console.log(scroll)
+
+  if (scroll < 90) {
+    document.getElementById('stickysection').classList.remove('sticky')
+  }
+  else {
+    document.getElementById ('stickysection').classList.add('sticky')
+     
+  }
+})
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+
+
+// back to top
+
+ var backToTopButton = document.getElementById("back-to-top-button");
+
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+              backToTopButton.addEventListener("scroll", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+              window.body.style.scrollBehavior="smooth"
+              });
+
+
+
+
+
+
+</script>
